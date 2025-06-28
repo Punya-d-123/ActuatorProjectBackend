@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-const actuatorDataschema = new mongoose.Schema({
+const actuatorDataSchema = new mongoose.Schema({
     name: {
     type: String,
     required: true,
@@ -33,4 +33,4 @@ const actuatorDataschema = new mongoose.Schema({
 });
 
 
-export default mongoose.model("ActuatorData", actuatorDataschema);
+export default mongoose.model("ActuatorData", actuatorDataSchema);
