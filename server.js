@@ -20,8 +20,3 @@ app.use('/api/valve' , valveRoutes);
 app.use('/api/series' , actuatorSeriesRoute);
 const PORT=5000;
 app.listen(PORT, () => console.log(` Server started on ${PORT}`))
-app.post('/api/login', (req, res) => {
-  const { email, password } = req.body;
- 
-  res.json({ token: 'your-jwt-token' });
-});
