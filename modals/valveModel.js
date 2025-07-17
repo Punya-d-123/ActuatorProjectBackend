@@ -4,9 +4,10 @@ const valveSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
-        unique: true,
-        trim:true,
+       
     },
+},{
+  collection: 'valve_type'  
 });
 
 
